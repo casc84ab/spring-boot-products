@@ -16,6 +16,8 @@
 
 [Ejecución](#ejecución-del-proyecto)
 
+[Tests](#tests)
+
 ## Descripción del proyecto
 Servicio en SpringBoot que provee una end point rest de consulta.
 
@@ -60,3 +62,9 @@ curl --location 'http://localhost:8080/v1/products' \
 "productId": "35455",
 "brandId": "1"
 }'
+
+## Tests
+Se han creado tests para validar toda la funcionalidad así como los 
+diferentes errores que pueden presentarse en la aplicación. 
+El resultado es un 95% de líneas cubiertas y un 100% de clases y métodos
+![img.png](src/main/resources/readme_images/img_coverage.png)
