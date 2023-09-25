@@ -47,11 +47,13 @@ La entrada a nuestro servicio está en la capa de infraestructura, la cual se co
 ## Ejecución del proyecto
 
 <h3>Se deberá crear una configuración Maven para limpiar y compilar el proyecto:</h3>
+
 ![img_4.png](src/main/resources/readme_images/img_4.png)
 
 ![img_6.png](src/main/resources/readme_images/img_6.png)
 
 <h3>Seguidamente se ejecutará una nueva configuración de tipo Application:</h3>
+
 ![img_5.png](src/main/resources/readme_images/img_5.png)
 
 ![img_7.png](src/main/resources/readme_images/img_7.png)
