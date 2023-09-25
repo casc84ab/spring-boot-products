@@ -34,7 +34,7 @@ public class ProductRestAdapter {
     productPrice = getProductPriceUseCase.getProductPrice(productPrice);
 
     // Domain to response
-    return new ResponseEntity<>(productRestMapper.toProductGetPriceResponse(productPrice), HttpStatus.CREATED);
+    return new ResponseEntity<>(productRestMapper.toProductGetPriceResponse(productPrice), HttpStatus.OK);
   }
 
 }
