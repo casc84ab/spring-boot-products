@@ -14,6 +14,8 @@
 
 [Estructura del proyecto](#estructura-del-proyecto)
 
+[Base de datos H2](#base-de-datos-h2)
+
 [Ejecución](#ejecución-del-proyecto)
 
 [Tests](#tests)
@@ -43,6 +45,15 @@ Utiliza una base de datos en memoria (tipo h2) que se inicializa con los datos:
 
 Se ha creado una estructura hexagonal, la cual nos ayudará a seguir los principios SOLID, y nos permitirá una buena escalabilidad y mantenibilidad.
 La entrada a nuestro servicio está en la capa de infraestructura, la cual se comunica con el modelo a través de la capa de aplicación, y viceversa.
+
+## Base de datos h2
+Al iniciar el microservicio, se levantará una base de datos en memoria (h2).
+Con la configuración establecida delegamos la creación de tabla e inserción de datos a los ficheros .sql encontrados en src/main/resources (schema.sql, data.sql)
+
+Podemos acceder a la base de datos una vez el servicio ha iniciado accediento a la url: 
+http://localhost:8080/h2-console
+
+Utilizando el usuario/password configurado en el fichero application.yml
 
 ## Ejecución del proyecto
 
