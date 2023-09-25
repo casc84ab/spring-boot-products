@@ -1,0 +1,7 @@
+curl --location 'http://localhost:8080/v1/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "applicationDate": "2020-06-16 21:00:00",
+    "productId": "35455",
+    "brandId": "1"
+}'

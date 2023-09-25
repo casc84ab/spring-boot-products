@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    com.inditex.hexagonal.products: info
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb;DATABASE_TO_UPPER=false
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: false
+    hibernate:
+      ddl-auto: none
+  h2:
+    console.enabled: true
+  sql.init:
+    platform: h2
+    mode: always
